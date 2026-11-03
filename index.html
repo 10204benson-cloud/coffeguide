@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>慢滴手沖｜手沖咖啡新手教學</title>
+  <meta name="description" content="第一次手沖咖啡也能成功。備好器材、算出用量，再開計時器跟著畫面倒水；味道不對時，還有調整對照表。">
+  <meta name="theme-color" content="#F2F4EF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3C16 3 6 15 6 20a10 10 0 0020 0C26 15 16 3 16 3z' fill='%232338C8'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <a class="skip" href="#main">跳到主要內容</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="#top">慢滴手沖</a>
+      <nav aria-label="主選單">
+        <a href="#gear">器材</a>
+        <a href="#calc">用量</a>
+        <a href="#brew">跟著沖</a>
+        <a href="#fix">調整</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <noscript>
+      <p class="noscript wrap">用量計算機和沖煮計時器需要開啟 JavaScript 才能使用。</p>
+    </noscript>
+
+    <section class="hero">
+      <div class="wrap hero__inner">
+        <div class="hero__text">
+          <h1>把水倒對，<br>咖啡就成功一半</h1>
+          <p class="lead">第一次手沖也不會失手。備好器材、算出用量，再開計時器跟著畫面倒水，大約 15 分鐘就能喝到自己沖的一杯。</p>
+          <div class="actions">
+            <a class="btn btn--solid" href="#gear">開始備器材</a>
+            <a class="btn btn--line" href="#calc">直接算用量</a>
+          </div>
+        </div>
+        <div class="hero__art" data-dripper="hero" data-demo></div>
+      </div>
+    </section>
+
+    <section class="howto" aria-labelledby="howto-title">
+      <div class="wrap">
+        <h2 id="howto-title">這個網站怎麼用</h2>
+        <p class="howto__intro">從上往下做一遍，每一段約 3 到 5 分鐘。你也可以點任何一項，直接跳到需要的地方。</p>
+        <ol class="howto__list">
+          <li><a href="#gear"><strong>備好器材</strong><span>勾選清單，確認手邊有什麼</span></a></li>
+          <li><a href="#calc"><strong>算出用量</strong><span>選杯數和口味，得到粉量與水量</span></a></li>
+          <li><a href="#brew"><strong>跟著沖</strong><span>按下開始，照畫面指示倒水</span></a></li>
+          <li><a href="#fix"><strong>調整味道</strong><span>太酸、太苦時，下一杯怎麼改</span></a></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="gear" aria-labelledby="gear-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="gear-title">備好器材</h2>
+          <p>勾選你已經有的。必備的六項都打勾，就可以往下一步。</p>
+        </div>
+
+        <ul class="gear" id="gear-list">
+          <li>
+            <label class="gear__item">
+              <input type="checkbox" id="g-dripper" data-required>
+              <span class="gear__text"><strong>濾杯與濾紙</strong><span>錐形濾杯，搭配尺寸對的濾紙。水流比較好控制。</span></span>
+            </label>
+          </li>
+          <li>
+            <label class="gear__item">
+              <input type="checkbox" id="g-kettle" data-required>
+              <span class="gear__text"><strong>細口壺</strong><span>壺嘴細，才能控制水柱的粗細和速度。</span></span>
+            </label>
+          </li>
+          <li>
+            <label class="gear__item">
+              <input type="checkbox" id="g-scale" data-required>
+              <span class="gear__text"><strong>電子秤</strong><span>手沖用「克」計算，只靠眼睛估很容易差很多。</span></span>
+            </label>
+          </li>
+          <li>
+            <label class="gear__item">
+              <input type="checkbox" id="g-beans" data-required>
+              <span class="gear__text"><strong>咖啡豆</strong><span>買整顆豆、沖之前再磨，香氣差很多。</span></span>
+            </label>
+          </li>
+          <li>
+            <label class="gear__item">
+              <input type="checkbox" id="g-grinder" data-required>
+              <span class="gear__text"><strong>磨豆機</strong><span>手搖或電動都可以，重點是粗細能調整。</span></span>
+            </label>
+          </li>
+          <li>
+            <label class="gear__item">
+              <input type="checkbox" id="g-server" data-required>
+              <span class="gear__text"><strong>分享壺或杯子</strong><span>放在濾杯下面接咖啡，順便看出出水量。</span></span>
+            </label>
+          </li>
+          <li>
+            <label class="gear__item">
+              <input type="checkbox" id="g-thermo">
+              <span class="gear__text"><strong>溫度計（可省略）</strong><span>沒有也沒關係，水煮滾後先靜置一會兒再沖。</span></span>
+            </label>
+          </li>
+        </ul>
+        <p class="gear__status" id="gear-status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="calc" aria-labelledby="calc-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="calc-title">算出用量</h2>
+          <p>選好條件，右邊會直接給你克數。下一步的計時器會照這裡的設定走。</p>
+        </div>
+
+        <div class="calc">
+          <form class="calc__controls" id="calc-form" autocomplete="off">
+            <fieldset>
+              <legend>要沖幾杯</legend>
+              <div class="seg">
+                <label><input type="radio" name="cups" value="1"><span class="seg__face">1 杯</span></label>
+                <label><input type="radio" name="cups" value="2" checked><span class="seg__face">2 杯</span></label>
+                <label><input type="radio" name="cups" value="3"><span class="seg__face">3 杯</span></label>
+              </div>
+              <p class="hint">一杯約 240 毫升。1 到 2 杯用 01 號濾杯，3 杯用 02 號比較穩。</p>
+            </fieldset>
+
+            <fieldset>
+              <legend>想喝什麼口感</legend>
+              <div class="seg">
+                <label><input type="radio" name="ratio" value="17"><span class="seg__face">清爽<small>1:17</small></span></label>
+                <label><input type="radio" name="ratio" value="16" checked><span class="seg__face">均衡<small>1:16</small></span></label>
+                <label><input type="radio" name="ratio" value="14"><span class="seg__face">濃郁<small>1:14</small></span></label>
+              </div>
+              <p class="hint">第一次沖就選均衡。數字是 1 克咖啡粉配幾克水。</p>
+            </fieldset>
+
+            <fieldset>
+              <legend>咖啡豆的烘焙度</legend>
+              <div class="seg">
+                <label><input type="radio" name="roast" value="light"><span class="seg__face">淺焙</span></label>
+                <label><input type="radio" name="roast" value="medium" checked><span class="seg__face">中焙</span></label>
+                <label><input type="radio" name="roast" value="dark"><span class="seg__face">深焙</span></label>
+              </div>
+              <p class="hint">包裝上通常會寫。不確定就選中焙。</p>
+            </fieldset>
+          </form>
+
+          <dl class="result" aria-live="polite">
+            <div class="result__row"><dt>咖啡粉</dt><dd><b id="r-coffee">15</b> 克</dd></div>
+            <div class="result__row"><dt>總水量</dt><dd><b id="r-water">240</b> 克</dd></div>
+            <div class="result__row"><dt>水溫</dt><dd><b id="r-temp">91</b> 度</dd></div>
+            <div class="result__row result__row--text"><dt>悶蒸水量</dt><dd><span id="r-bloom">30</span> 克，粉量的 2 倍</dd></div>
+            <div class="result__row result__row--text"><dt>研磨粗細</dt><dd>中細，像細砂糖</dd></div>
+            <div class="result__row result__row--text"><dt>粉水比</dt><dd>約 <span id="r-ratio">1:16</span></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="brew" aria-labelledby="brew-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="brew-title">跟著沖</h2>
+          <p>用量來自上一步：咖啡粉 <b id="b-coffee">15</b> 克，總水量 <b id="b-water">240</b> 克。想換設定，回到上面重選，計時器會自動重來。</p>
+        </div>
+
+        <div class="brew">
+          <div class="brew__stage">
+            <div class="stage-art" data-dripper="brew"></div>
+            <output class="clock" id="clock" aria-label="已經過的時間">0:00</output>
+            <p class="clock__water">目前累積水量 <b id="water">0</b> 克</p>
+            <div class="controls">
+              <button type="button" class="btn btn--paper" id="start">開始計時</button>
+              <button type="button" class="btn btn--ghost" id="reset">重來</button>
+            </div>
+            <label class="check">
+              <input type="checkbox" id="beep" checked>
+              <span>換步驟時響一聲</span>
+            </label>
+            <p class="stage__note">計時時，手機螢幕會盡量保持亮著。</p>
+          </div>
+
+          <div class="brew__steps">
+            <h3>計時前先做四件事</h3>
+            <ol class="prep">
+              <li>濾紙放進濾杯，用熱水沖濕再倒掉，順便把分享壺預熱。</li>
+              <li>磨好咖啡粉倒進濾紙，輕輕搖平。</li>
+              <li>把分享壺連同濾杯放上電子秤，歸零。</li>
+              <li>水煮好，倒進細口壺。</li>
+            </ol>
+
+            <h3>按下開始後</h3>
+            <ol class="steps" id="steps"></ol>
+
+            <p class="done" id="done" hidden>完成了。把濾杯移開，搖一搖分享壺，倒進杯子慢慢喝。覺得味道不對，<a href="#fix">看看怎麼調整</a>。</p>
+            <p class="sr" id="announce" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="fix" aria-labelledby="fix-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="fix-title">喝起來不對？</h2>
+          <p>點一個最像的感覺，看下一杯怎麼改。一次只改一項，才知道是哪一項有用。</p>
+        </div>
+
+        <div class="fix">
+          <div class="scale" aria-hidden="true">
+            <div class="scale__track"><span class="scale__mark" id="mark"></span></div>
+            <div class="scale__ends"><span>萃取不足</span><span>剛好</span><span>過度萃取</span></div>
+          </div>
+
+          <div class="fix__buttons" role="group" aria-label="味道的問題">
+            <button type="button" aria-pressed="false" data-key="sour" data-pos="10">太酸、很尖銳</button>
+            <button type="button" aria-pressed="false" data-key="thin" data-pos="28">水水的、沒味道</button>
+            <button type="button" aria-pressed="false" data-key="heavy" data-pos="72">悶悶的、不清爽</button>
+            <button type="button" aria-pressed="false" data-key="bitter" data-pos="90">太苦、澀澀的</button>
+          </div>
+
+          <div class="fix__answer" id="fix-answer" aria-live="polite">
+            <p>先點上面最接近的感覺。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>這是用 HTML、CSS、JavaScript 手寫的靜態網站，沒有使用任何框架。</p>
+      <p>頁面上的數字是常見的入門配方，實際可以依豆子和喜好微調。</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
